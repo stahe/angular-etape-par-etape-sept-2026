@@ -1,0 +1,1400 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introduction étape par étape au framework web [Angular]">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/angular-etape-par-etape-sept-2026/internationalisation.html">
+      
+      
+        <link rel="prev" href="observables-et-etat-partage.html">
+      
+      
+        <link rel="next" href="le-serveur-rdvmedecins-une-boite-noire.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>6. Internationalisation - Introduction étape par étape au framework web [Angular]</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Introduction étape par étape au framework web [Angular]";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#6-internationalisation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Introduction étape par étape au framework web [Angular]" class="md-header__button md-logo" aria-label="Introduction étape par étape au framework web [Angular]" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introduction étape par étape au framework web [Angular]
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              6. Internationalisation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/angular-etape-par-etape-sept-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Introduction étape par étape au framework web [Angular]" class="md-nav__button md-logo" aria-label="Introduction étape par étape au framework web [Angular]" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introduction étape par étape au framework web [Angular]
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/angular-etape-par-etape-sept-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="premiers-pas-avec-angular.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Premiers pas avec Angular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="les-composants.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Les composants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="le-routage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Le routage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="observables-et-etat-partage.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Observables et état partagé
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Internationalisation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="internationalisation.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Internationalisation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#61-exemple-21-une-application-en-deux-langues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1. Exemple 21 : une application en deux langues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1. Exemple 21 : une application en deux langues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611-les-dictionnaires" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.1. Les dictionnaires
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-la-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.2. La configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#613-le-pluriel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.3. Le pluriel
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#614-la-page-traduite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1.4. La page traduite
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="le-serveur-rdvmedecins-une-boite-noire.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Le serveur RdvMedecins, une boîte noire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dialoguer-avec-le-serveur.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Dialoguer avec le serveur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusion-intermediaire.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Conclusion intermédiaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="etude-de-cas--le-client-angular-de-lapplication-rdvmedecins.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Étude de cas : le client Angular de l'application RdvMedecins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="deploiement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Déploiement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="annexes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Annexes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="6-internationalisation">6. <span style="color: #2e74b5">Internationalisation</span></h1>
+<h2 id="61-exemple-21-une-application-en-deux-langues">6.1. <span style="color: #2e74b5">Exemple 21 : une application en deux langues</span></h2>
+<p>L&#x27;application <em>[RdvMedecins]</em> existe en français et en anglais. Dans le cours <em>[NestJS]</em>, c&#x27;est le serveur qui traduisait les pages, avant de les envoyer. Désormais, les pages sont fabriquées dans le navigateur : c&#x27;est donc le client qui les traduit, et changer de langue ne demande plus rien au serveur.</p>
+<p><em>[Angular]</em> a son propre système de traduction, <em>[@angular/localize]</em>, qui fabrique une application compilée <strong>par langue</strong> : on ne change alors de langue qu&#x27;en chargeant une autre application. Nous utiliserons plutôt la bibliothèque <em>[ngx-translate]</em>, la plus utilisée avec <em>[Angular]</em>, qui traduit <strong>pendant l&#x27;exécution</strong> : un clic suffit à retraduire toute la page.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>21-i18n/src/app/
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>├── i18n/
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>│   ├── fr.json          le dictionnaire français
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>│   ├── en.json          le dictionnaire anglais
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>│   ├── i18n.ts          la configuration de ngx-translate
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>│   └── pluriel.pipe.ts  le choix du pluriel
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>├── app.ts
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>└── app.html
+</code></pre></div></td></tr></table></div>
+<p>La bibliothèque est déclarée dans le fichier <em>[package.json]</em> de l&#x27;espace de travail :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>"@ngx-translate/core": "^18.0.0",
+</code></pre></div></td></tr></table></div>
+<h3 id="611-les-dictionnaires">6.1.1. <span style="color: #1f4d78">Les dictionnaires</span></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span>
+<span class="normal"><a href="#__codelineno-2-24">24</a></span>
+<span class="normal"><a href="#__codelineno-2-25">25</a></span>
+<span class="normal"><a href="#__codelineno-2-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>{
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>  "APP": {
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>    "TITRE": "Exemple 21 - une application en deux langues",
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>    "LANGUE": "Langue"
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>  },
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>  "ACCUEIL": {
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>    "BONJOUR": "Bonjour {{nom}} !",
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>    "AUJOURDHUI": "Nous sommes le {{date}}.",
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>    "PRIX": "Une consultation coûte {{prix}}.",
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>    "RENDEZ_VOUS": {
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>      "zero": "aucun rendez-vous",
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>      "one": "un rendez-vous",
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>      "other": "{{n}} rendez-vous"
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>    },
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a>    "AJOUTER": "Ajouter un rendez-vous",
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a>    "RETIRER": "En retirer un"
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a>  },
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a>  "ERRORS": {
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a>    "LOGIN_TAKEN": "Ce login est déjà utilisé par un autre compte.",
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a>    "TOO_MANY_ATTEMPTS": "Trop de tentatives infructueuses. Réessayez dans {{minutes}} minute(s)."
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a>  },
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a>  "SERVEUR": {
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a>    "TITRE": "Traduire une réponse du serveur",
+<a id="__codelineno-2-24" name="__codelineno-2-24"></a>    "EXPLICATION": "Le serveur RdvMedecins ne renvoie que des clés. C'est le client qui les traduit :"
+<a id="__codelineno-2-25" name="__codelineno-2-25"></a>  }
+<a id="__codelineno-2-26" name="__codelineno-2-26"></a>}
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-3-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-3-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-3-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-3-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-3-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-3-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-3-10">10</a></span>
+<span class="normal"><a href="#__codelineno-3-11">11</a></span>
+<span class="normal"><a href="#__codelineno-3-12">12</a></span>
+<span class="normal"><a href="#__codelineno-3-13">13</a></span>
+<span class="normal"><a href="#__codelineno-3-14">14</a></span>
+<span class="normal"><a href="#__codelineno-3-15">15</a></span>
+<span class="normal"><a href="#__codelineno-3-16">16</a></span>
+<span class="normal"><a href="#__codelineno-3-17">17</a></span>
+<span class="normal"><a href="#__codelineno-3-18">18</a></span>
+<span class="normal"><a href="#__codelineno-3-19">19</a></span>
+<span class="normal"><a href="#__codelineno-3-20">20</a></span>
+<span class="normal"><a href="#__codelineno-3-21">21</a></span>
+<span class="normal"><a href="#__codelineno-3-22">22</a></span>
+<span class="normal"><a href="#__codelineno-3-23">23</a></span>
+<span class="normal"><a href="#__codelineno-3-24">24</a></span>
+<span class="normal"><a href="#__codelineno-3-25">25</a></span>
+<span class="normal"><a href="#__codelineno-3-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>{
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>  "APP": {
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a>    "TITRE": "Example 21 - a two-language application",
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a>    "LANGUE": "Language"
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a>  },
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a>  "ACCUEIL": {
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a>    "BONJOUR": "Hello {{nom}}!",
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a>    "AUJOURDHUI": "Today is {{date}}.",
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a>    "PRIX": "A consultation costs {{prix}}.",
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a>    "RENDEZ_VOUS": {
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a>      "zero": "no appointment",
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a>      "one": "one appointment",
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a>      "other": "{{n}} appointments"
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a>    },
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a>    "AJOUTER": "Add an appointment",
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a>    "RETIRER": "Remove one"
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a>  },
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a>  "ERRORS": {
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a>    "LOGIN_TAKEN": "This login is already used by another account.",
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a>    "TOO_MANY_ATTEMPTS": "Too many failed attempts. Try again in {{minutes}} minute(s)."
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a>  },
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a>  "SERVEUR": {
+<a id="__codelineno-3-23" name="__codelineno-3-23"></a>    "TITRE": "Translating a server response",
+<a id="__codelineno-3-24" name="__codelineno-3-24"></a>    "EXPLICATION": "The RdvMedecins server only sends keys. The client translates them:"
+<a id="__codelineno-3-25" name="__codelineno-3-25"></a>  }
+<a id="__codelineno-3-26" name="__codelineno-3-26"></a>}
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>chaque texte a une <strong>clé</strong>, formée des noms des niveaux successifs : <strong><em>[ACCUEIL.BONJOUR]</em></strong>, <strong><em>[ERRORS.LOGIN_TAKEN]</em></strong>... Le code et les templates ne contiennent plus aucun texte, seulement des clés ;</li>
+<li>ligne 7 : les paramètres s&#x27;écrivent entre doubles accolades : <strong><em>[{{nom}}]</em></strong> ;</li>
+<li>lignes 10-14 : les formes du pluriel, rangées sous une même clé (voir plus loin) ;</li>
+<li>lignes 18-21 : les clés <strong><em>[ERRORS.*]</em></strong> sont celles que renvoie le serveur <em>[RdvMedecins]</em> dans ses réponses d&#x27;erreur (chapitre suivant). Le serveur ne renvoie pas de texte, mais une clé ; le client la traduit dans la langue de l&#x27;utilisateur.</li>
+</ul>
+<h3 id="612-la-configuration">6.1.2. <span style="color: #1f4d78">La configuration</span></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-4-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-4-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-4-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-4-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-4-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-4-10">10</a></span>
+<span class="normal"><a href="#__codelineno-4-11">11</a></span>
+<span class="normal"><a href="#__codelineno-4-12">12</a></span>
+<span class="normal"><a href="#__codelineno-4-13">13</a></span>
+<span class="normal"><a href="#__codelineno-4-14">14</a></span>
+<span class="normal"><a href="#__codelineno-4-15">15</a></span>
+<span class="normal"><a href="#__codelineno-4-16">16</a></span>
+<span class="normal"><a href="#__codelineno-4-17">17</a></span>
+<span class="normal"><a href="#__codelineno-4-18">18</a></span>
+<span class="normal"><a href="#__codelineno-4-19">19</a></span>
+<span class="normal"><a href="#__codelineno-4-20">20</a></span>
+<span class="normal"><a href="#__codelineno-4-21">21</a></span>
+<span class="normal"><a href="#__codelineno-4-22">22</a></span>
+<span class="normal"><a href="#__codelineno-4-23">23</a></span>
+<span class="normal"><a href="#__codelineno-4-24">24</a></span>
+<span class="normal"><a href="#__codelineno-4-25">25</a></span>
+<span class="normal"><a href="#__codelineno-4-26">26</a></span>
+<span class="normal"><a href="#__codelineno-4-27">27</a></span>
+<span class="normal"><a href="#__codelineno-4-28">28</a></span>
+<span class="normal"><a href="#__codelineno-4-29">29</a></span>
+<span class="normal"><a href="#__codelineno-4-30">30</a></span>
+<span class="normal"><a href="#__codelineno-4-31">31</a></span>
+<span class="normal"><a href="#__codelineno-4-32">32</a></span>
+<span class="normal"><a href="#__codelineno-4-33">33</a></span>
+<span class="normal"><a href="#__codelineno-4-34">34</a></span>
+<span class="normal"><a href="#__codelineno-4-35">35</a></span>
+<span class="normal"><a href="#__codelineno-4-36">36</a></span>
+<span class="normal"><a href="#__codelineno-4-37">37</a></span>
+<span class="normal"><a href="#__codelineno-4-38">38</a></span>
+<span class="normal"><a href="#__codelineno-4-39">39</a></span>
+<span class="normal"><a href="#__codelineno-4-40">40</a></span>
+<span class="normal"><a href="#__codelineno-4-41">41</a></span>
+<span class="normal"><a href="#__codelineno-4-42">42</a></span>
+<span class="normal"><a href="#__codelineno-4-43">43</a></span>
+<span class="normal"><a href="#__codelineno-4-44">44</a></span>
+<span class="normal"><a href="#__codelineno-4-45">45</a></span>
+<span class="normal"><a href="#__codelineno-4-46">46</a></span>
+<span class="normal"><a href="#__codelineno-4-47">47</a></span>
+<span class="normal"><a href="#__codelineno-4-48">48</a></span>
+<span class="normal"><a href="#__codelineno-4-49">49</a></span>
+<span class="normal"><a href="#__codelineno-4-50">50</a></span>
+<span class="normal"><a href="#__codelineno-4-51">51</a></span>
+<span class="normal"><a href="#__codelineno-4-52">52</a></span>
+<span class="normal"><a href="#__codelineno-4-53">53</a></span>
+<span class="normal"><a href="#__codelineno-4-54">54</a></span>
+<span class="normal"><a href="#__codelineno-4-55">55</a></span>
+<span class="normal"><a href="#__codelineno-4-56">56</a></span>
+<span class="normal"><a href="#__codelineno-4-57">57</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="c1">// 21-i18n/src/app/i18n/i18n.ts - la configuration de ngx-translate</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="c1">// -------------------------------------------------------------------------</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="c1">// ngx-translate est la bibliothèque de traduction la plus utilisée avec</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="c1">// Angular. On lui fournit :</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="c1">//   - un DICTIONNAIRE par langue (fr.json, en.json), où chaque texte a une</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="c1">//     CLÉ ("ACCUEIL.BONJOUR") ; les paramètres s'écrivent {{nom}} ;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="c1">//   - un CHARGEUR (TranslateLoader), qui renvoie le dictionnaire d'une</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="c1">//     langue. Le nôtre les prend dans le code de l'application (import de</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="c1">//     fichiers JSON) ; un autre pourrait les télécharger ;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="c1">//   - la langue de départ (celle mémorisée dans localStorage, sinon celle</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="c1">//     du navigateur, sinon le français) et la langue de repli.</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="c1">// Dans les templates, {{ 'ACCUEIL.BONJOUR' | translate: { nom: 'Marie' } }}</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><span class="c1">// affiche le texte de la langue COURANTE ; changer de langue met toute la</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><span class="c1">// page à jour.</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16"></a><span class="c1">//</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="c1">// C'est, côté client, le même principe que le cours NestJS (dictionnaires</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="c1">// i18n/*.json + helper {{t}}) - mais la traduction se fait maintenant dans</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19"></a><span class="c1">// le navigateur, et changer de langue ne demande plus rien au serveur.</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="c1">//</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21"></a><span class="c1">// (Angular a aussi son propre système, @angular/localize, qui fabrique UNE</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a><span class="c1">// application compilée par langue : on ne peut alors changer de langue</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a><span class="c1">// qu'en changeant de page. ngx-translate traduit, lui, pendant l'exécution.)</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a>
+<a id="__codelineno-4-26" name="__codelineno-4-26"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Provider</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/core'</span><span class="p">;</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">provideTranslateLoader</span><span class="p">,</span><span class="w"> </span><span class="nx">provideTranslateService</span><span class="p">,</span><span class="w"> </span><span class="nx">TranslateLoader</span><span class="p">,</span><span class="w"> </span><span class="nx">TranslationObject</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@ngx-translate/core'</span><span class="p">;</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Observable</span><span class="p">,</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'rxjs'</span><span class="p">;</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29"></a><span class="k">import</span><span class="w"> </span><span class="nx">fr</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./fr.json'</span><span class="p">;</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30"></a><span class="k">import</span><span class="w"> </span><span class="nx">en</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./en.json'</span><span class="p">;</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31"></a>
+<a id="__codelineno-4-32" name="__codelineno-4-32"></a><span class="k">export</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">Langue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'fr'</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s1">'en'</span><span class="p">;</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">LANGUES</span><span class="o">:</span><span class="w"> </span><span class="kt">Langue</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">'fr'</span><span class="p">,</span><span class="w"> </span><span class="s1">'en'</span><span class="p">];</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34"></a><span class="k">export</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="nx">CLE_LANGUE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'exemple21.langue'</span><span class="p">;</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35"></a>
+<a id="__codelineno-4-36" name="__codelineno-4-36"></a><span class="c1">// le chargeur des dictionnaires</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37"></a><span class="kd">class</span><span class="w"> </span><span class="nx">DictionnairesLoader</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">TranslateLoader</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38"></a><span class="w">  </span><span class="nx">getTranslation</span><span class="p">(</span><span class="nx">langue</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">Observable</span><span class="o">&lt;</span><span class="nx">TranslationObject</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="k">of</span><span class="p">(</span><span class="nx">langue</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'en'</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">en</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">fr</span><span class="p">);</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-4-41" name="__codelineno-4-41"></a><span class="p">}</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42"></a>
+<a id="__codelineno-4-43" name="__codelineno-4-43"></a><span class="kd">function</span><span class="w"> </span><span class="nx">langueDeDepart</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">Langue</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">memorisee</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="nx">CLE_LANGUE</span><span class="p">);</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">memorisee</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'fr'</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">memorisee</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">'en'</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">memorisee</span><span class="p">;</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">navigator</span><span class="p">.</span><span class="nx">language</span><span class="p">.</span><span class="nx">startsWith</span><span class="p">(</span><span class="s1">'en'</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">'en'</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">'fr'</span><span class="p">;</span>
+<a id="__codelineno-4-49" name="__codelineno-4-49"></a><span class="p">}</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50"></a>
+<a id="__codelineno-4-51" name="__codelineno-4-51"></a><span class="k">export</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">provideI18n</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="nx">Provider</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-52" name="__codelineno-4-52"></a><span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">provideTranslateService</span><span class="p">({</span>
+<a id="__codelineno-4-53" name="__codelineno-4-53"></a><span class="w">    </span><span class="nx">loader</span><span class="o">:</span><span class="w"> </span><span class="kt">provideTranslateLoader</span><span class="p">(</span><span class="nx">DictionnairesLoader</span><span class="p">),</span>
+<a id="__codelineno-4-54" name="__codelineno-4-54"></a><span class="w">    </span><span class="nx">fallbackLang</span><span class="o">:</span><span class="w"> </span><span class="s1">'fr'</span><span class="p">,</span><span class="w"> </span><span class="c1">// une clé absente en anglais : on prend le français</span>
+<a id="__codelineno-4-55" name="__codelineno-4-55"></a><span class="w">    </span><span class="nx">lang</span><span class="o">:</span><span class="w"> </span><span class="kt">langueDeDepart</span><span class="p">(),</span>
+<a id="__codelineno-4-56" name="__codelineno-4-56"></a><span class="w">  </span><span class="p">});</span>
+<a id="__codelineno-4-57" name="__codelineno-4-57"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>lignes 29-30 : les dictionnaires sont importés comme des modules : ils font partie du code de l&#x27;application. C&#x27;est possible grâce à l&#x27;option <strong><em>[resolveJsonModule]</em></strong> du fichier <em>[tsconfig.json]</em> ;</li>
+<li>ligne 34 : la clé sous laquelle la langue choisie est rangée dans le <strong><em>[localStorage]</em></strong> (exemple 20) ;</li>
+<li>lignes 37-41 : le <strong>chargeur</strong> des dictionnaires : <em>[ngx-translate]</em> l&#x27;appelle pour obtenir le dictionnaire d&#x27;une langue, sous forme d&#x27;observable. Le nôtre les prend dans le code ; un autre pourrait les télécharger depuis le serveur ;</li>
+<li>lignes 43-49 : la langue de départ : celle que l&#x27;utilisateur a choisie la dernière fois, sinon celle du navigateur, sinon le français ;</li>
+<li>lignes 51-57 : <strong><em>[provideTranslateService]</em></strong> rend les services de <em>[ngx-translate]</em> disponibles dans toute l&#x27;application. <strong><em>[fallbackLang]</em></strong> : la langue utilisée pour une clé absente du dictionnaire courant.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span>
+<span class="normal"><a href="#__codelineno-5-13">13</a></span>
+<span class="normal"><a href="#__codelineno-5-14">14</a></span>
+<span class="normal"><a href="#__codelineno-5-15">15</a></span>
+<span class="normal"><a href="#__codelineno-5-16">16</a></span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="o">//</span> <span class="o">=========================================================================</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="o">//</span> <span class="mi">21</span><span class="o">-</span><span class="n">i18n</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">ts</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="o">//</span> <span class="o">-------------------------------------------------------------------------</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="o">//</span> <span class="n">provideI18n</span><span class="p">()</span> <span class="p">:</span> <span class="n">ngx</span><span class="o">-</span><span class="n">translate</span> <span class="p">(</span><span class="n">cf</span><span class="o">.</span> <span class="n">app</span><span class="o">/</span><span class="n">i18n</span><span class="o">/</span><span class="n">i18n</span><span class="o">.</span><span class="n">ts</span><span class="p">)</span><span class="o">.</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="o">//</span> <span class="n">registerLocaleData</span><span class="p">(</span><span class="n">localeFr</span><span class="p">)</span> <span class="p">:</span> <span class="n">les</span> <span class="n">règles</span> <span class="n">françaises</span> <span class="n">des</span> <span class="n">pipes</span> <span class="n">date</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="o">//</span> <span class="n">currency</span><span class="o">...</span> <span class="p">(</span><span class="n">l</span><span class="s1">'anglais est toujours disponible).</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="o">//</span> <span class="o">=========================================================================</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">registerLocaleData</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/common'</span><span class="p">;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="kn">import</span><span class="w"> </span><span class="nn">localeFr</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/common/locales/fr'</span><span class="p">;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">bootstrapApplication</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/platform-browser'</span><span class="p">;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">App</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'./app/app'</span><span class="p">;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">provideI18n</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'./app/i18n/i18n'</span><span class="p">;</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="n">registerLocaleData</span><span class="p">(</span><span class="n">localeFr</span><span class="p">);</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="n">bootstrapApplication</span><span class="p">(</span><span class="n">App</span><span class="p">,</span> <span class="p">{</span> <span class="n">providers</span><span class="p">:</span> <span class="p">[</span><span class="n">provideI18n</span><span class="p">()]</span> <span class="p">})</span><span class="o">.</span><span class="n">catch</span><span class="p">((</span><span class="n">erreur</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">erreur</span><span class="p">));</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>ligne 15 : les pipes <strong><em>[date]</em></strong> et <strong><em>[currency]</em></strong> (exemple 09) connaissent les règles de l&#x27;anglais ; celles du français doivent être enregistrées ;</li>
+<li>ligne 17 : les services de <em>[ngx-translate]</em> sont ajoutés à l&#x27;application.</li>
+</ul>
+<h3 id="613-le-pluriel">6.1.3. <span style="color: #1f4d78">Le pluriel</span></h3>
+<p><em>[ngx-translate]</em> ne gère pas les pluriels. Un petit pipe choisit la bonne forme :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span>
+<span class="normal"><a href="#__codelineno-6-14">14</a></span>
+<span class="normal"><a href="#__codelineno-6-15">15</a></span>
+<span class="normal"><a href="#__codelineno-6-16">16</a></span>
+<span class="normal"><a href="#__codelineno-6-17">17</a></span>
+<span class="normal"><a href="#__codelineno-6-18">18</a></span>
+<span class="normal"><a href="#__codelineno-6-19">19</a></span>
+<span class="normal"><a href="#__codelineno-6-20">20</a></span>
+<span class="normal"><a href="#__codelineno-6-21">21</a></span>
+<span class="normal"><a href="#__codelineno-6-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="c1">// 21-i18n/src/app/i18n/pluriel.pipe.ts - choisir la forme du pluriel</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="c1">// -------------------------------------------------------------------------</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="c1">// ngx-translate ne gère pas les pluriels. Le dictionnaire en donne les</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="c1">// formes sous une même clé ("RENDEZ_VOUS": { "zero", "one", "other" }) et</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="c1">// ce pipe choisit la bonne, selon le nombre et la langue :</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="c1">//     {{ 'ACCUEIL.RENDEZ_VOUS' | pluriel: n : langue | translate: { n } }}</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="c1">// Intl.PluralRules connaît les règles de chaque langue ("one" ou "other" en</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="c1">// français comme en anglais, mais d'autres formes en polonais, en arabe...).</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11"></a>
+<a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Pipe</span><span class="p">,</span><span class="w"> </span><span class="nx">PipeTransform</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/core'</span><span class="p">;</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13"></a>
+<a id="__codelineno-6-14" name="__codelineno-6-14"></a><span class="kd">@Pipe</span><span class="p">({</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">'pluriel'</span><span class="w"> </span><span class="p">})</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">PlurielPipe</span><span class="w"> </span><span class="k">implements</span><span class="w"> </span><span class="nx">PipeTransform</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16"></a><span class="w">  </span><span class="nx">transform</span><span class="p">(</span><span class="nx">cle</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="nx">n</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">,</span><span class="w"> </span><span class="nx">langue</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18"></a><span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">cle</span><span class="si">}</span><span class="sb">.zero`</span><span class="p">;</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">cle</span><span class="si">}</span><span class="sb">.</span><span class="si">${</span><span class="ow">new</span><span class="w"> </span><span class="nb">Intl</span><span class="p">.</span><span class="nx">PluralRules</span><span class="p">(</span><span class="nx">langue</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="s1">'fr'</span><span class="p">).</span><span class="nx">select</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="si">}</span><span class="sb">`</span><span class="p">;</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>lignes 16-21 : le pipe reçoit une clé (<strong><em>[ACCUEIL.RENDEZ_VOUS]</em></strong>), un nombre et une langue ; il rend la clé de la bonne forme (<strong><em>[ACCUEIL.RENDEZ_VOUS.one]</em></strong>, par exemple) ;</li>
+<li>ligne 18 : zéro a sa propre forme (« aucun rendez-vous ») ;</li>
+<li>ligne 20 : <strong><em>[Intl.PluralRules]</em></strong>, fourni par le navigateur, connaît les règles de chaque langue : <strong><em>[one]</em></strong> ou <strong><em>[other]</em></strong> en français et en anglais, mais d&#x27;autres formes en polonais ou en arabe. (Attention : en français, 1,5 est au singulier ; en anglais, au pluriel.)</li>
+</ul>
+<h3 id="614-la-page-traduite">6.1.4. <span style="color: #1f4d78">La page traduite</span></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-7-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-7-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-7-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-7-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-7-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-7-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-7-10">10</a></span>
+<span class="normal"><a href="#__codelineno-7-11">11</a></span>
+<span class="normal"><a href="#__codelineno-7-12">12</a></span>
+<span class="normal"><a href="#__codelineno-7-13">13</a></span>
+<span class="normal"><a href="#__codelineno-7-14">14</a></span>
+<span class="normal"><a href="#__codelineno-7-15">15</a></span>
+<span class="normal"><a href="#__codelineno-7-16">16</a></span>
+<span class="normal"><a href="#__codelineno-7-17">17</a></span>
+<span class="normal"><a href="#__codelineno-7-18">18</a></span>
+<span class="normal"><a href="#__codelineno-7-19">19</a></span>
+<span class="normal"><a href="#__codelineno-7-20">20</a></span>
+<span class="normal"><a href="#__codelineno-7-21">21</a></span>
+<span class="normal"><a href="#__codelineno-7-22">22</a></span>
+<span class="normal"><a href="#__codelineno-7-23">23</a></span>
+<span class="normal"><a href="#__codelineno-7-24">24</a></span>
+<span class="normal"><a href="#__codelineno-7-25">25</a></span>
+<span class="normal"><a href="#__codelineno-7-26">26</a></span>
+<span class="normal"><a href="#__codelineno-7-27">27</a></span>
+<span class="normal"><a href="#__codelineno-7-28">28</a></span>
+<span class="normal"><a href="#__codelineno-7-29">29</a></span>
+<span class="normal"><a href="#__codelineno-7-30">30</a></span>
+<span class="normal"><a href="#__codelineno-7-31">31</a></span>
+<span class="normal"><a href="#__codelineno-7-32">32</a></span>
+<span class="normal"><a href="#__codelineno-7-33">33</a></span>
+<span class="normal"><a href="#__codelineno-7-34">34</a></span>
+<span class="normal"><a href="#__codelineno-7-35">35</a></span>
+<span class="normal"><a href="#__codelineno-7-36">36</a></span>
+<span class="normal"><a href="#__codelineno-7-37">37</a></span>
+<span class="normal"><a href="#__codelineno-7-38">38</a></span>
+<span class="normal"><a href="#__codelineno-7-39">39</a></span>
+<span class="normal"><a href="#__codelineno-7-40">40</a></span>
+<span class="normal"><a href="#__codelineno-7-41">41</a></span>
+<span class="normal"><a href="#__codelineno-7-42">42</a></span>
+<span class="normal"><a href="#__codelineno-7-43">43</a></span>
+<span class="normal"><a href="#__codelineno-7-44">44</a></span>
+<span class="normal"><a href="#__codelineno-7-45">45</a></span>
+<span class="normal"><a href="#__codelineno-7-46">46</a></span>
+<span class="normal"><a href="#__codelineno-7-47">47</a></span>
+<span class="normal"><a href="#__codelineno-7-48">48</a></span>
+<span class="normal"><a href="#__codelineno-7-49">49</a></span>
+<span class="normal"><a href="#__codelineno-7-50">50</a></span>
+<span class="normal"><a href="#__codelineno-7-51">51</a></span>
+<span class="normal"><a href="#__codelineno-7-52">52</a></span>
+<span class="normal"><a href="#__codelineno-7-53">53</a></span>
+<span class="normal"><a href="#__codelineno-7-54">54</a></span>
+<span class="normal"><a href="#__codelineno-7-55">55</a></span>
+<span class="normal"><a href="#__codelineno-7-56">56</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="c1">// 21-i18n/src/app/app.ts - une page traduite</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="c1">// -------------------------------------------------------------------------</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="c1">//   - 'CLE' | translate                    un texte ;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="c1">//   - 'CLE' | translate: { nom: ... }      un texte à paramètres ;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="c1">//   - date / currency avec la langue       une date, un montant, au format</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="c1">//                                          de la langue courante ;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="c1">//   - translate.use('en')                  change la langue : toute la</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="c1">//                                          page se retraduit.</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10"></a><span class="c1">// TranslateService.currentLang est un SIGNAL : la langue courante.</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">effect</span><span class="p">,</span><span class="w"> </span><span class="nx">inject</span><span class="p">,</span><span class="w"> </span><span class="nx">signal</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/core'</span><span class="p">;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">CurrencyPipe</span><span class="p">,</span><span class="w"> </span><span class="nx">DatePipe</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/common'</span><span class="p">;</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">TranslatePipe</span><span class="p">,</span><span class="w"> </span><span class="nx">TranslateService</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@ngx-translate/core'</span><span class="p">;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">CLE_LANGUE</span><span class="p">,</span><span class="w"> </span><span class="nx">Langue</span><span class="p">,</span><span class="w"> </span><span class="nx">LANGUES</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./i18n/i18n'</span><span class="p">;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">PlurielPipe</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./i18n/pluriel.pipe'</span><span class="p">;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18"></a>
+<a id="__codelineno-7-19" name="__codelineno-7-19"></a><span class="kd">@Component</span><span class="p">({</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20"></a><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">'app-root'</span><span class="p">,</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="w">  </span><span class="nx">imports</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">CurrencyPipe</span><span class="p">,</span><span class="w"> </span><span class="nx">DatePipe</span><span class="p">,</span><span class="w"> </span><span class="nx">TranslatePipe</span><span class="p">,</span><span class="w"> </span><span class="nx">PlurielPipe</span><span class="p">],</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22"></a><span class="w">  </span><span class="nx">templateUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">'./app.html'</span><span class="p">,</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23"></a><span class="p">})</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">App</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25"></a><span class="w">  </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">translate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">inject</span><span class="p">(</span><span class="nx">TranslateService</span><span class="p">);</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="w">  </span><span class="k">protected</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">langue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">translate</span><span class="p">.</span><span class="nx">currentLang</span><span class="p">;</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="w">  </span><span class="k">protected</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">langues</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">LANGUES</span><span class="p">;</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28"></a><span class="w">  </span><span class="k">protected</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">nombre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">signal</span><span class="p">(</span><span class="mf">2</span><span class="p">);</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="w">  </span><span class="k">protected</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">aujourdhui</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">();</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30"></a>
+<a id="__codelineno-7-31" name="__codelineno-7-31"></a><span class="w">  </span><span class="c1">// ce que renverrait le serveur RdvMedecins (cf. chapitre sur la boîte noire)</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32"></a><span class="w">  </span><span class="k">protected</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">reponsesServeur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">statusCode</span><span class="o">:</span><span class="w"> </span><span class="kt">409</span><span class="p">,</span><span class="w"> </span><span class="nx">cle</span><span class="o">:</span><span class="w"> </span><span class="s1">'ERRORS.LOGIN_TAKEN'</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{}</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">statusCode</span><span class="o">:</span><span class="w"> </span><span class="kt">429</span><span class="p">,</span><span class="w"> </span><span class="nx">cle</span><span class="o">:</span><span class="w"> </span><span class="s1">'ERRORS.TOO_MANY_ATTEMPTS'</span><span class="p">,</span><span class="w"> </span><span class="nx">params</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">minutes</span><span class="o">:</span><span class="w"> </span><span class="s1">'15'</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35"></a><span class="w">  </span><span class="p">];</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36"></a>
+<a id="__codelineno-7-37" name="__codelineno-7-37"></a><span class="w">  </span><span class="c1">// translate.translate(clé) : un SIGNAL qui suit la langue courante</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38"></a><span class="w">  </span><span class="k">private</span><span class="w"> </span><span class="k">readonly</span><span class="w"> </span><span class="nx">titre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">translate</span><span class="p">.</span><span class="nx">translate</span><span class="p">(</span><span class="s1">'APP.TITRE'</span><span class="p">);</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39"></a>
+<a id="__codelineno-7-40" name="__codelineno-7-40"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41"></a><span class="w">    </span><span class="c1">// à chaque changement de langue : on la mémorise, et on met à jour</span>
+<a id="__codelineno-7-42" name="__codelineno-7-42"></a><span class="w">    </span><span class="c1">// l'attribut lang de la page (utile aux lecteurs d'écran, aux correcteurs)</span>
+<a id="__codelineno-7-43" name="__codelineno-7-43"></a><span class="w">    </span><span class="nx">effect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-44" name="__codelineno-7-44"></a><span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">langue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">langue</span><span class="p">();</span>
+<a id="__codelineno-7-45" name="__codelineno-7-45"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">langue</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-46" name="__codelineno-7-46"></a><span class="w">        </span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span><span class="nx">CLE_LANGUE</span><span class="p">,</span><span class="w"> </span><span class="nx">langue</span><span class="p">);</span>
+<a id="__codelineno-7-47" name="__codelineno-7-47"></a><span class="w">        </span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">lang</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">langue</span><span class="p">;</span>
+<a id="__codelineno-7-48" name="__codelineno-7-48"></a><span class="w">      </span><span class="p">}</span>
+<a id="__codelineno-7-49" name="__codelineno-7-49"></a><span class="w">      </span><span class="nb">document</span><span class="p">.</span><span class="nx">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">titre</span><span class="p">());</span>
+<a id="__codelineno-7-50" name="__codelineno-7-50"></a><span class="w">    </span><span class="p">});</span>
+<a id="__codelineno-7-51" name="__codelineno-7-51"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-52" name="__codelineno-7-52"></a>
+<a id="__codelineno-7-53" name="__codelineno-7-53"></a><span class="w">  </span><span class="k">protected</span><span class="w"> </span><span class="nx">choisir</span><span class="p">(</span><span class="nx">langue</span><span class="o">:</span><span class="w"> </span><span class="kt">Langue</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="ow">void</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-54" name="__codelineno-7-54"></a><span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">translate</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">langue</span><span class="p">);</span>
+<a id="__codelineno-7-55" name="__codelineno-7-55"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-56" name="__codelineno-7-56"></a><span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>ligne 21 : <strong><em>[TranslatePipe]</em></strong> : le pipe <strong><em>[translate]</em></strong> ;</li>
+<li>ligne 25 : <strong><em>[TranslateService]</em></strong> : le service principal de <em>[ngx-translate]</em> ;</li>
+<li>ligne 26 : <strong><em>[currentLang]</em></strong> : la langue courante, sous forme de <strong>signal</strong> ;</li>
+<li>lignes 32-35 : deux réponses d&#x27;erreur, telles que les renverrait le serveur : une clé, et des paramètres ;</li>
+<li>ligne 38 : <strong><em>[translate.translate(clé)]</em></strong> rend un <strong>signal</strong> qui vaut la traduction de la clé, et qui suit la langue courante ;</li>
+<li>lignes 43-50 : un effet, exécuté à chaque changement de langue : la langue est mémorisée (ligne 46), l&#x27;attribut <strong><em>[lang]</em></strong> de la page est mis à jour (ligne 47 ; il sert aux lecteurs d&#x27;écran et aux correcteurs orthographiques), ainsi que le titre de l&#x27;onglet (ligne 49) ;</li>
+<li>ligne 54 : <strong><em>[use]</em></strong> change la langue courante : toute la page se retraduit.</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-8-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-8-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-8-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-8-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-8-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-8-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-8-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-8-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-8-10">10</a></span>
+<span class="normal"><a href="#__codelineno-8-11">11</a></span>
+<span class="normal"><a href="#__codelineno-8-12">12</a></span>
+<span class="normal"><a href="#__codelineno-8-13">13</a></span>
+<span class="normal"><a href="#__codelineno-8-14">14</a></span>
+<span class="normal"><a href="#__codelineno-8-15">15</a></span>
+<span class="normal"><a href="#__codelineno-8-16">16</a></span>
+<span class="normal"><a href="#__codelineno-8-17">17</a></span>
+<span class="normal"><a href="#__codelineno-8-18">18</a></span>
+<span class="normal"><a href="#__codelineno-8-19">19</a></span>
+<span class="normal"><a href="#__codelineno-8-20">20</a></span>
+<span class="normal"><a href="#__codelineno-8-21">21</a></span>
+<span class="normal"><a href="#__codelineno-8-22">22</a></span>
+<span class="normal"><a href="#__codelineno-8-23">23</a></span>
+<span class="normal"><a href="#__codelineno-8-24">24</a></span>
+<span class="normal"><a href="#__codelineno-8-25">25</a></span>
+<span class="normal"><a href="#__codelineno-8-26">26</a></span>
+<span class="normal"><a href="#__codelineno-8-27">27</a></span>
+<span class="normal"><a href="#__codelineno-8-28">28</a></span>
+<span class="normal"><a href="#__codelineno-8-29">29</a></span>
+<span class="normal"><a href="#__codelineno-8-30">30</a></span>
+<span class="normal"><a href="#__codelineno-8-31">31</a></span>
+<span class="normal"><a href="#__codelineno-8-32">32</a></span>
+<span class="normal"><a href="#__codelineno-8-33">33</a></span>
+<span class="normal"><a href="#__codelineno-8-34">34</a></span>
+<span class="normal"><a href="#__codelineno-8-35">35</a></span>
+<span class="normal"><a href="#__codelineno-8-36">36</a></span>
+<span class="normal"><a href="#__codelineno-8-37">37</a></span>
+<span class="normal"><a href="#__codelineno-8-38">38</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"container py-4"</span> <span class="na">style</span><span class="o">=</span><span class="s">"max-width: 720px"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex justify-content-between align-items-center mb-3"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">"h3 mb-0"</span><span class="p">&gt;</span>{{ 'APP.TITRE' | translate }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn-group btn-group-sm"</span> <span class="na">role</span><span class="o">=</span><span class="s">"group"</span> <span class="err">[</span><span class="na">attr</span><span class="err">.</span><span class="na">aria-label</span><span class="err">]="'</span><span class="na">APP</span><span class="err">.</span><span class="na">LANGUE</span><span class="err">'</span> <span class="err">|</span> <span class="na">translate</span><span class="err">"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5"></a>      @for (l of langues; track l) {
+<a id="__codelineno-8-6" name="__codelineno-8-6"></a>        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn"</span> <span class="err">[</span><span class="na">class</span><span class="err">]="</span><span class="na">langue</span><span class="err">()</span> <span class="err">===</span> <span class="na">l</span> <span class="err">?</span> <span class="err">'</span><span class="na">btn-primary</span><span class="err">'</span> <span class="na">:</span> <span class="err">'</span><span class="na">btn-outline-primary</span><span class="err">'"</span> <span class="err">(</span><span class="na">click</span><span class="err">)="</span><span class="na">choisir</span><span class="err">(</span><span class="na">l</span><span class="err">)"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7"></a>          {{ l.toUpperCase() }}
+<a id="__codelineno-8-8" name="__codelineno-8-8"></a>        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9"></a>      }
+<a id="__codelineno-8-10" name="__codelineno-8-10"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12"></a>
+<a id="__codelineno-8-13" name="__codelineno-8-13"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card p-3 mb-3"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ 'ACCUEIL.BONJOUR' | translate: { nom: 'Marie' } }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15"></a>    <span class="cm">&lt;!-- un paramètre calculé par un autre pipe, dans la langue courante --&gt;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ 'ACCUEIL.AUJOURDHUI' | translate: { date: (aujourdhui | date: 'fullDate' : '' : langue() ?? 'fr') } }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ 'ACCUEIL.PRIX' | translate: { prix: (1234.5 | currency: 'EUR' : 'symbol' : '1.2-2' : langue() ?? 'fr') } }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18"></a>    <span class="cm">&lt;!-- pluriel choisit la clé (zero, one, other), translate la traduit --&gt;</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19"></a>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">"fw-bold"</span><span class="p">&gt;</span>{{ 'ACCUEIL.RENDEZ_VOUS' | pluriel: nombre() : langue() | translate: { n: nombre() } }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20"></a>    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex gap-2"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21"></a>      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-sm btn-outline-success"</span> <span class="err">(</span><span class="na">click</span><span class="err">)="</span><span class="na">nombre</span><span class="err">.</span><span class="na">set</span><span class="err">(</span><span class="na">nombre</span><span class="err">()</span> <span class="err">+</span> <span class="na">1</span><span class="err">)"</span><span class="p">&gt;</span>{{ 'ACCUEIL.AJOUTER' | translate }}<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22"></a>      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-sm btn-outline-secondary"</span> <span class="err">[</span><span class="na">disabled</span><span class="err">]="</span><span class="na">nombre</span><span class="err">()</span> <span class="err">===</span> <span class="na">0</span><span class="err">"</span> <span class="err">(</span><span class="na">click</span><span class="err">)="</span><span class="na">nombre</span><span class="err">.</span><span class="na">set</span><span class="err">(</span><span class="na">nombre</span><span class="err">()</span> <span class="na">-</span> <span class="na">1</span><span class="err">)"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23"></a>        {{ 'ACCUEIL.RETIRER' | translate }}
+<a id="__codelineno-8-24" name="__codelineno-8-24"></a>      <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25"></a>    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27"></a>
+<a id="__codelineno-8-28" name="__codelineno-8-28"></a>  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"card p-3"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-29" name="__codelineno-8-29"></a>    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"h6"</span><span class="p">&gt;</span>{{ 'SERVEUR.TITRE' | translate }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ 'SERVEUR.EXPLICATION' | translate }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31"></a>    <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">"mb-0"</span><span class="p">&gt;</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32"></a>      @for (r of reponsesServeur; track r.cle) {
+<a id="__codelineno-8-33" name="__codelineno-8-33"></a>        <span class="cm">&lt;!-- la clé du serveur EST une clé du dictionnaire ; params fournit ses paramètres --&gt;</span>
+<a id="__codelineno-8-34" name="__codelineno-8-34"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">code</span><span class="p">&gt;</span>{{ r.statusCode }} {{ r.cle }}<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span><span class="ni">&amp;rarr;</span> {{ r.cle | translate: r.params }}<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<a id="__codelineno-8-35" name="__codelineno-8-35"></a>      }
+<a id="__codelineno-8-36" name="__codelineno-8-36"></a>    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37"></a>  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<a id="__codelineno-8-38" name="__codelineno-8-38"></a><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>ligne 3 : <strong><em>[&#x27;APP.TITRE&#x27; | translate]</em></strong> : la traduction de la clé, dans la langue courante ;</li>
+<li>ligne 6 : le bouton de la langue courante est mis en valeur ;</li>
+<li>ligne 14 : un texte à paramètre : le pipe reçoit un objet qui donne la valeur de chaque paramètre ;</li>
+<li>lignes 16-17 : la valeur d&#x27;un paramètre peut être calculée par un autre pipe. Le dernier argument de <strong><em>[date]</em></strong> et de <strong><em>[currency]</em></strong> est la langue : la date et le montant sont écrits à la manière française, ou anglaise ;</li>
+<li>ligne 19 : deux pipes enchaînés : <strong><em>[pluriel]</em></strong> choisit la clé, <strong><em>[translate]</em></strong> la traduit ;</li>
+<li>ligne 34 : la clé renvoyée par le serveur est traduite, avec ses paramètres.</li>
+</ul>
+<p><strong><em>[npm start 21-i18n]</em></strong> ; en français :</p>
+<p><img src="images/10000000000005DC000003248CB22C54.png" width="605" height="324" style="width:16cm;height:8.576cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005DC000003248CB22C54.png" /></p>
+<p>On clique sur <em>[EN]</em>, puis sur « Remove one » :</p>
+<p><img src="images/10000000000005DC000003240BFCC737.png" width="605" height="324" style="width:16cm;height:8.576cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005DC000003240BFCC737.png" /></p>
+<p>On recharge la page : elle reste en anglais, la langue a été mémorisée.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Ce tutoriel, rédigé par l’IA d’Anthropic <strong>Claude</strong> à la demande de <strong>Serge Tahé</strong>, est mis à la disposition du public selon les termes de la
+        <em>licence Creative Commons Attribution – Pas d’utilisation commerciale –
+        ShareAlike 3.0 Unported</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
