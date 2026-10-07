@@ -1074,14 +1074,14 @@
 <span class="normal"><a href="#__codelineno-0-5">5</a></span>
 <span class="normal"><a href="#__codelineno-0-6">6</a></span>
 <span class="normal"><a href="#__codelineno-0-7">7</a></span>
-<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="mf">10</span><span class="o">-</span><span class="nx">composants</span><span class="o">/</span><span class="nx">src</span><span class="o">/</span><span class="nx">app</span><span class="o">/</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="err">├──</span><span class="w"> </span><span class="nx">carte</span><span class="o">-</span><span class="nx">medecin</span><span class="o">/</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="nx">carte</span><span class="o">-</span><span class="nx">medecin</span><span class="p">.</span><span class="nx">ts</span><span class="w">     </span><span class="nx">la</span><span class="w"> </span><span class="nx">classe</span><span class="w"> </span><span class="nx">du</span><span class="w"> </span><span class="nx">composant</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="err">│</span><span class="w">   </span><span class="err">├──</span><span class="w"> </span><span class="nx">carte</span><span class="o">-</span><span class="nx">medecin</span><span class="p">.</span><span class="nx">html</span><span class="w">   </span><span class="nx">son</span><span class="w"> </span><span class="nx">template</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="err">│</span><span class="w">   </span><span class="err">└──</span><span class="w"> </span><span class="nx">carte</span><span class="o">-</span><span class="nx">medecin</span><span class="p">.</span><span class="nx">css</span><span class="w">    </span><span class="nx">son</span><span class="w"> </span><span class="nx">style</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="err">├──</span><span class="w"> </span><span class="nx">medecin</span><span class="p">.</span><span class="nx">ts</span><span class="w">               </span><span class="nx">le</span><span class="w"> </span><span class="kr">type</span><span class="w"> </span><span class="nx">Medecin</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="err">├──</span><span class="w"> </span><span class="nx">app</span><span class="p">.</span><span class="nx">ts</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="err">└──</span><span class="w"> </span><span class="nx">app</span><span class="p">.</span><span class="nx">html</span>
+<span class="normal"><a href="#__codelineno-0-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>10-composants/src/app/
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>├── carte-medecin/
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>│   ├── carte-medecin.ts     la classe du composant
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a>│   ├── carte-medecin.html   son template
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a>│   └── carte-medecin.css    son style
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>├── medecin.ts               le type Medecin
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>├── app.ts
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a>└── app.html
 </code></pre></div></td></tr></table></div>
 <p>Le type des données partagé par le parent et l&#x27;enfant :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
@@ -1219,18 +1219,18 @@
 <span class="normal"><a href="#__codelineno-4-9"> 9</a></span>
 <span class="normal"><a href="#__codelineno-4-10">10</a></span>
 <span class="normal"><a href="#__codelineno-4-11">11</a></span>
-<span class="normal"><a href="#__codelineno-4-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>/* le style du composant : il ne s'applique qu'à SES éléments */
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>.initiales {
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>  width: 2.5rem;
-<a id="__codelineno-4-4" name="__codelineno-4-4"></a>  height: 2.5rem;
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>  border-radius: 50%;
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>  display: flex;
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a>  align-items: center;
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a>  justify-content: center;
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a>  background: #dd0031;
-<a id="__codelineno-4-10" name="__codelineno-4-10"></a>  color: white;
-<a id="__codelineno-4-11" name="__codelineno-4-11"></a>  font-weight: bold;
-<a id="__codelineno-4-12" name="__codelineno-4-12"></a>}
+<span class="normal"><a href="#__codelineno-4-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="c">/* le style du composant : il ne s'applique qu'à SES éléments */</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="p">.</span><span class="nc">initiales</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span><span class="kt">rem</span><span class="p">;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">50</span><span class="kt">%</span><span class="p">;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">  </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">  </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="w">  </span><span class="k">justify-content</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#dd0031</span><span class="p">;</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><span class="w">  </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p>La classe <strong><em>[initiales]</em></strong> ne concerne que ce composant : un autre composant pourrait avoir sa propre classe <strong><em>[initiales]</em></strong>, sans conflit.</p>
 <h3 id="312-le-parent">3.1.2. <span style="color: #1f4d78">Le parent</span></h3>
@@ -1706,46 +1706,46 @@
 <span class="normal"><a href="#__codelineno-11-38">38</a></span>
 <span class="normal"><a href="#__codelineno-11-39">39</a></span>
 <span class="normal"><a href="#__codelineno-11-40">40</a></span>
-<span class="normal"><a href="#__codelineno-11-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="o">//</span> <span class="o">=========================================================================</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="o">//</span> <span class="mi">12</span><span class="o">-</span><span class="n">projection</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">app</span><span class="o">/</span><span class="n">carte</span><span class="o">/</span><span class="n">carte</span><span class="o">.</span><span class="n">ts</span> <span class="o">-</span> <span class="n">un</span> <span class="n">GABARIT</span> <span class="n">réutilisable</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="o">//</span> <span class="o">-------------------------------------------------------------------------</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="o">//</span> <span class="n">Les</span> <span class="n">entrées</span> <span class="n">transmettent</span> <span class="n">des</span> <span class="n">DONNÉES</span> <span class="p">;</span> <span class="n">la</span> <span class="n">PROJECTION</span> <span class="n">de</span> <span class="n">contenu</span> <span class="n">transmet</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="o">//</span> <span class="n">du</span> <span class="n">CONTENU</span> <span class="p">(</span><span class="n">du</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">d</span><span class="s1">'autres composants), écrit par le parent ENTRE les</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="o">//</span> <span class="n">balises</span> <span class="o">&lt;</span><span class="n">app</span><span class="o">-</span><span class="n">carte</span><span class="o">&gt;</span> <span class="n">et</span> <span class="o">&lt;/</span><span class="n">app</span><span class="o">-</span><span class="n">carte</span><span class="o">&gt;.</span> <span class="n">La</span> <span class="n">carte</span> <span class="n">fixe</span> <span class="n">le</span> <span class="n">cadre</span> <span class="p">(</span><span class="n">bordure</span><span class="p">,</span>
-<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="o">//</span> <span class="n">en</span><span class="o">-</span><span class="n">tête</span><span class="p">,</span> <span class="n">pied</span><span class="p">),</span> <span class="n">le</span> <span class="n">parent</span> <span class="n">fournit</span> <span class="n">ce</span> <span class="n">qu</span><span class="s1">'il y a dedans :</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="o">//</span>   <span class="o">-</span> <span class="o">&lt;</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span> <span class="o">/&gt;</span>                   <span class="p">:</span> <span class="n">le</span> <span class="n">contenu</span> <span class="s2">"principal"</span> <span class="p">;</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="o">//</span>   <span class="o">-</span> <span class="o">&lt;</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span> <span class="n">select</span><span class="o">=</span><span class="s2">"[entete]"</span> <span class="o">/&gt;</span> <span class="p">:</span> <span class="n">seulement</span> <span class="n">les</span> <span class="n">éléments</span> <span class="n">qui</span> <span class="n">ont</span>
-<a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="o">//</span>                                        <span class="n">l</span><span class="s1">'attribut entete ;</span>
-<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="o">//</span>   <span class="o">-</span> <span class="n">le</span> <span class="n">contenu</span> <span class="n">placé</span> <span class="n">ENTRE</span> <span class="o">&lt;</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span><span class="o">&gt;</span> <span class="n">et</span> <span class="o">&lt;/</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span><span class="o">&gt;</span> <span class="n">est</span> <span class="n">affiché</span> <span class="n">si</span>
-<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="o">//</span>     <span class="n">le</span> <span class="n">parent</span> <span class="n">ne</span> <span class="n">fournit</span> <span class="n">rien</span> <span class="p">(</span><span class="n">contenu</span> <span class="n">par</span> <span class="n">défaut</span><span class="p">)</span><span class="o">.</span>
-<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="o">//</span> <span class="n">C</span><span class="s1">'est l'</span><span class="n">équivalent</span><span class="p">,</span> <span class="n">côté</span> <span class="n">client</span><span class="p">,</span> <span class="n">du</span> <span class="n">gabarit</span> <span class="n">layout</span><span class="o">.</span><span class="n">hbs</span> <span class="n">et</span> <span class="n">de</span> <span class="n">son</span> <span class="p">{{{</span><span class="n">body</span><span class="p">}}}</span>
-<a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="o">//</span> <span class="n">dans</span> <span class="n">le</span> <span class="n">cours</span> <span class="n">NestJS</span><span class="o">.</span>
-<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="o">//</span> <span class="o">=========================================================================</span>
+<span class="normal"><a href="#__codelineno-11-41">41</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="c1">// 12-projection/src/app/carte/carte.ts - un GABARIT réutilisable</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="c1">// -------------------------------------------------------------------------</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="c1">// Les entrées transmettent des DONNÉES ; la PROJECTION de contenu transmet</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="c1">// du CONTENU (du HTML, d'autres composants), écrit par le parent ENTRE les</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="c1">// balises &lt;app-carte&gt; et &lt;/app-carte&gt;. La carte fixe le cadre (bordure,</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="c1">// en-tête, pied), le parent fournit ce qu'il y a dedans :</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="c1">//   - &lt;ng-content /&gt;                   : le contenu "principal" ;</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="c1">//   - &lt;ng-content select="[entete]" /&gt; : seulement les éléments qui ont</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="c1">//                                        l'attribut entete ;</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="c1">//   - le contenu placé ENTRE &lt;ng-content&gt; et &lt;/ng-content&gt; est affiché si</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="c1">//     le parent ne fournit rien (contenu par défaut).</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="c1">// C'est l'équivalent, côté client, du gabarit layout.hbs et de son {{{body}}}</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="c1">// dans le cours NestJS.</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="c1">// =========================================================================</span>
 <a id="__codelineno-11-16" name="__codelineno-11-16"></a>
-<a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">Component</span><span class="p">,</span> <span class="nb">input</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/core'</span><span class="p">;</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">Component</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/core'</span><span class="p">;</span>
 <a id="__codelineno-11-18" name="__codelineno-11-18"></a>
-<a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="nd">@Component</span><span class="p">({</span>
-<a id="__codelineno-11-20" name="__codelineno-11-20"></a>  <span class="n">selector</span><span class="p">:</span> <span class="s1">'app-carte'</span><span class="p">,</span>
-<a id="__codelineno-11-21" name="__codelineno-11-21"></a>  <span class="n">template</span><span class="p">:</span> <span class="err">`</span>
-<a id="__codelineno-11-22" name="__codelineno-11-22"></a>    <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"card mb-3"</span> <span class="p">[</span><span class="n">class</span><span class="p">]</span><span class="o">=</span><span class="s2">"couleur() ? 'border-' + couleur() : ''"</span><span class="o">&gt;</span>
-<a id="__codelineno-11-23" name="__codelineno-11-23"></a>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"card-header"</span> <span class="p">[</span><span class="n">class</span><span class="p">]</span><span class="o">=</span><span class="s2">"couleur() ? 'text-bg-' + couleur() : ''"</span><span class="o">&gt;</span>
-<a id="__codelineno-11-24" name="__codelineno-11-24"></a>        <span class="o">&lt;</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span> <span class="n">select</span><span class="o">=</span><span class="s2">"[entete]"</span><span class="o">&gt;</span><span class="n">Sans</span> <span class="n">titre</span><span class="o">&lt;/</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span><span class="o">&gt;</span>
-<a id="__codelineno-11-25" name="__codelineno-11-25"></a>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<a id="__codelineno-11-26" name="__codelineno-11-26"></a>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"card-body"</span><span class="o">&gt;</span>
-<a id="__codelineno-11-27" name="__codelineno-11-27"></a>        <span class="o">&lt;</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span> <span class="o">/&gt;</span>
-<a id="__codelineno-11-28" name="__codelineno-11-28"></a>      <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<a id="__codelineno-11-29" name="__codelineno-11-29"></a>      <span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="n">un</span> <span class="n">pied</span> <span class="n">vide</span> <span class="p">(</span><span class="n">le</span> <span class="n">parent</span> <span class="n">n</span><span class="s1">'a rien fourni) est caché par le CSS :empty --&gt;</span>
-<a id="__codelineno-11-30" name="__codelineno-11-30"></a>      <span class="o">&lt;</span><span class="n">div</span> <span class="n">class</span><span class="o">=</span><span class="s2">"card-footer text-muted small"</span><span class="o">&gt;&lt;</span><span class="n">ng</span><span class="o">-</span><span class="n">content</span> <span class="n">select</span><span class="o">=</span><span class="s2">"[pied]"</span> <span class="o">/&gt;&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<a id="__codelineno-11-31" name="__codelineno-11-31"></a>    <span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
-<a id="__codelineno-11-32" name="__codelineno-11-32"></a>  <span class="err">`</span><span class="p">,</span>
-<a id="__codelineno-11-33" name="__codelineno-11-33"></a>  <span class="n">styles</span><span class="p">:</span> <span class="err">`</span>
-<a id="__codelineno-11-34" name="__codelineno-11-34"></a>    <span class="o">.</span><span class="n">card</span><span class="o">-</span><span class="n">footer</span><span class="p">:</span><span class="n">empty</span> <span class="p">{</span>
-<a id="__codelineno-11-35" name="__codelineno-11-35"></a>      <span class="n">display</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
-<a id="__codelineno-11-36" name="__codelineno-11-36"></a>    <span class="p">}</span>
-<a id="__codelineno-11-37" name="__codelineno-11-37"></a>  <span class="err">`</span><span class="p">,</span>
+<a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="kd">@Component</span><span class="p">({</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="w">  </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">'app-carte'</span><span class="p">,</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21"></a><span class="w">  </span><span class="nx">template</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-11-22" name="__codelineno-11-22"></a><span class="sb">    &lt;div class="card mb-3" [class]="couleur() ? 'border-' + couleur() : ''"&gt;</span>
+<a id="__codelineno-11-23" name="__codelineno-11-23"></a><span class="sb">      &lt;div class="card-header" [class]="couleur() ? 'text-bg-' + couleur() : ''"&gt;</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24"></a><span class="sb">        &lt;ng-content select="[entete]"&gt;Sans titre&lt;/ng-content&gt;</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25"></a><span class="sb">      &lt;/div&gt;</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26"></a><span class="sb">      &lt;div class="card-body"&gt;</span>
+<a id="__codelineno-11-27" name="__codelineno-11-27"></a><span class="sb">        &lt;ng-content /&gt;</span>
+<a id="__codelineno-11-28" name="__codelineno-11-28"></a><span class="sb">      &lt;/div&gt;</span>
+<a id="__codelineno-11-29" name="__codelineno-11-29"></a><span class="sb">      &lt;!-- un pied vide (le parent n'a rien fourni) est caché par le CSS :empty --&gt;</span>
+<a id="__codelineno-11-30" name="__codelineno-11-30"></a><span class="sb">      &lt;div class="card-footer text-muted small"&gt;&lt;ng-content select="[pied]" /&gt;&lt;/div&gt;</span>
+<a id="__codelineno-11-31" name="__codelineno-11-31"></a><span class="sb">    &lt;/div&gt;</span>
+<a id="__codelineno-11-32" name="__codelineno-11-32"></a><span class="sb">  `</span><span class="p">,</span>
+<a id="__codelineno-11-33" name="__codelineno-11-33"></a><span class="w">  </span><span class="nx">styles</span><span class="o">:</span><span class="w"> </span><span class="sb">`</span>
+<a id="__codelineno-11-34" name="__codelineno-11-34"></a><span class="sb">    .card-footer:empty {</span>
+<a id="__codelineno-11-35" name="__codelineno-11-35"></a><span class="sb">      display: none;</span>
+<a id="__codelineno-11-36" name="__codelineno-11-36"></a><span class="sb">    }</span>
+<a id="__codelineno-11-37" name="__codelineno-11-37"></a><span class="sb">  `</span><span class="p">,</span>
 <a id="__codelineno-11-38" name="__codelineno-11-38"></a><span class="p">})</span>
-<a id="__codelineno-11-39" name="__codelineno-11-39"></a><span class="n">export</span> <span class="k">class</span><span class="w"> </span><span class="nc">Carte</span> <span class="p">{</span>
-<a id="__codelineno-11-40" name="__codelineno-11-40"></a>  <span class="n">readonly</span> <span class="n">couleur</span> <span class="o">=</span> <span class="nb">input</span><span class="o">&lt;</span><span class="s1">'primary'</span> <span class="o">|</span> <span class="s1">'success'</span> <span class="o">|</span> <span class="s1">'danger'</span><span class="o">&gt;</span><span class="p">();</span>
+<a id="__codelineno-11-39" name="__codelineno-11-39"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">Carte</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-11-40" name="__codelineno-11-40"></a><span class="w">  </span><span class="k">readonly</span><span class="w"> </span><span class="nx">couleur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">input</span><span class="o">&lt;</span><span class="s1">'primary'</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s1">'success'</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s1">'danger'</span><span class="o">&gt;</span><span class="p">();</span>
 <a id="__codelineno-11-41" name="__codelineno-11-41"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <ul>
@@ -2694,23 +2694,23 @@
 <span class="normal"><a href="#__codelineno-26-15">15</a></span>
 <span class="normal"><a href="#__codelineno-26-16">16</a></span>
 <span class="normal"><a href="#__codelineno-26-17">17</a></span>
-<span class="normal"><a href="#__codelineno-26-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="o">//</span> <span class="o">=========================================================================</span>
-<a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="o">//</span> <span class="mi">15</span><span class="o">-</span><span class="n">directives</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">app</span><span class="o">/</span><span class="n">directives</span><span class="o">/</span><span class="n">autofocus</span><span class="o">.</span><span class="n">directive</span><span class="o">.</span><span class="n">ts</span>
-<a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="o">//</span> <span class="o">-------------------------------------------------------------------------</span>
-<a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="o">//</span> <span class="o">&lt;</span><span class="nb">input</span> <span class="n">appAutofocus</span><span class="o">&gt;</span> <span class="p">:</span> <span class="n">le</span> <span class="n">champ</span> <span class="n">reçoit</span> <span class="n">le</span> <span class="n">focus</span> <span class="n">dès</span> <span class="n">qu</span><span class="s1">'il est affiché.</span>
-<a id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="o">//</span> <span class="n">inject</span><span class="p">(</span><span class="n">ElementRef</span><span class="p">)</span> <span class="n">donne</span> <span class="n">l</span><span class="s1">'élément HTML hôte (nativeElement).</span>
-<a id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="o">//</span> <span class="p">(</span><span class="n">L</span><span class="s1">'attribut HTML autofocus ne fonctionne qu'</span><span class="n">au</span> <span class="n">chargement</span> <span class="n">de</span> <span class="n">la</span> <span class="n">page</span> <span class="p">;</span>
-<a id="__codelineno-26-7" name="__codelineno-26-7"></a><span class="o">//</span> <span class="n">dans</span> <span class="n">une</span> <span class="n">application</span> <span class="n">à</span> <span class="n">page</span> <span class="n">unique</span><span class="p">,</span> <span class="n">les</span> <span class="n">champs</span> <span class="n">apparaissent</span> <span class="n">plus</span> <span class="n">tard</span><span class="o">.</span><span class="p">)</span>
-<a id="__codelineno-26-8" name="__codelineno-26-8"></a><span class="o">//</span> <span class="o">=========================================================================</span>
+<span class="normal"><a href="#__codelineno-26-18">18</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2"></a><span class="c1">// 15-directives/src/app/directives/autofocus.directive.ts</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3"></a><span class="c1">// -------------------------------------------------------------------------</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4"></a><span class="c1">// &lt;input appAutofocus&gt; : le champ reçoit le focus dès qu'il est affiché.</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5"></a><span class="c1">// inject(ElementRef) donne l'élément HTML hôte (nativeElement).</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6"></a><span class="c1">// (L'attribut HTML autofocus ne fonctionne qu'au chargement de la page ;</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7"></a><span class="c1">// dans une application à page unique, les champs apparaissent plus tard.)</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8"></a><span class="c1">// =========================================================================</span>
 <a id="__codelineno-26-9" name="__codelineno-26-9"></a>
-<a id="__codelineno-26-10" name="__codelineno-26-10"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">afterNextRender</span><span class="p">,</span> <span class="n">Directive</span><span class="p">,</span> <span class="n">ElementRef</span><span class="p">,</span> <span class="n">inject</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/core'</span><span class="p">;</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">afterNextRender</span><span class="p">,</span><span class="w"> </span><span class="nx">Directive</span><span class="p">,</span><span class="w"> </span><span class="nx">ElementRef</span><span class="p">,</span><span class="w"> </span><span class="nx">inject</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/core'</span><span class="p">;</span>
 <a id="__codelineno-26-11" name="__codelineno-26-11"></a>
-<a id="__codelineno-26-12" name="__codelineno-26-12"></a><span class="nd">@Directive</span><span class="p">({</span> <span class="n">selector</span><span class="p">:</span> <span class="s1">'[appAutofocus]'</span> <span class="p">})</span>
-<a id="__codelineno-26-13" name="__codelineno-26-13"></a><span class="n">export</span> <span class="k">class</span><span class="w"> </span><span class="nc">AutofocusDirective</span> <span class="p">{</span>
-<a id="__codelineno-26-14" name="__codelineno-26-14"></a>  <span class="n">constructor</span><span class="p">()</span> <span class="p">{</span>
-<a id="__codelineno-26-15" name="__codelineno-26-15"></a>    <span class="n">const</span> <span class="n">element</span> <span class="o">=</span> <span class="n">inject</span><span class="o">&lt;</span><span class="n">ElementRef</span><span class="o">&lt;</span><span class="n">HTMLElement</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="n">ElementRef</span><span class="p">)</span><span class="o">.</span><span class="n">nativeElement</span><span class="p">;</span>
-<a id="__codelineno-26-16" name="__codelineno-26-16"></a>    <span class="n">afterNextRender</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="n">element</span><span class="o">.</span><span class="n">focus</span><span class="p">());</span>
-<a id="__codelineno-26-17" name="__codelineno-26-17"></a>  <span class="p">}</span>
+<a id="__codelineno-26-12" name="__codelineno-26-12"></a><span class="kd">@Directive</span><span class="p">({</span><span class="w"> </span><span class="nx">selector</span><span class="o">:</span><span class="w"> </span><span class="s1">'[appAutofocus]'</span><span class="w"> </span><span class="p">})</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13"></a><span class="k">export</span><span class="w"> </span><span class="kd">class</span><span class="w"> </span><span class="nx">AutofocusDirective</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-26-14" name="__codelineno-26-14"></a><span class="w">  </span><span class="kr">constructor</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-26-15" name="__codelineno-26-15"></a><span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">element</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">inject</span><span class="o">&lt;</span><span class="nx">ElementRef</span><span class="o">&lt;</span><span class="nx">HTMLElement</span><span class="o">&gt;&gt;</span><span class="p">(</span><span class="nx">ElementRef</span><span class="p">).</span><span class="nx">nativeElement</span><span class="p">;</span>
+<a id="__codelineno-26-16" name="__codelineno-26-16"></a><span class="w">    </span><span class="nx">afterNextRender</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">element</span><span class="p">.</span><span class="nx">focus</span><span class="p">());</span>
+<a id="__codelineno-26-17" name="__codelineno-26-17"></a><span class="w">  </span><span class="p">}</span>
 <a id="__codelineno-26-18" name="__codelineno-26-18"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <ul>

@@ -795,7 +795,7 @@
 <a id="__codelineno-0-8" name="__codelineno-0-8"></a>└── app.html
 </code></pre></div></td></tr></table></div>
 <p>La bibliothèque est déclarée dans le fichier <em>[package.json]</em> de l&#x27;espace de travail :</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>"@ngx-translate/core": "^18.0.0",
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">"@ngx-translate/core"</span><span class="p">:</span><span class="w"> </span><span class="s2">"^18.0.0"</span><span class="p">,</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="611-les-dictionnaires">6.1.1. <span style="color: #1f4d78">Les dictionnaires</span></h3>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
@@ -823,32 +823,32 @@
 <span class="normal"><a href="#__codelineno-2-23">23</a></span>
 <span class="normal"><a href="#__codelineno-2-24">24</a></span>
 <span class="normal"><a href="#__codelineno-2-25">25</a></span>
-<span class="normal"><a href="#__codelineno-2-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>{
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>  "APP": {
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a>    "TITRE": "Exemple 21 - une application en deux langues",
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>    "LANGUE": "Langue"
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a>  },
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a>  "ACCUEIL": {
-<a id="__codelineno-2-7" name="__codelineno-2-7"></a>    "BONJOUR": "Bonjour {{nom}} !",
-<a id="__codelineno-2-8" name="__codelineno-2-8"></a>    "AUJOURDHUI": "Nous sommes le {{date}}.",
-<a id="__codelineno-2-9" name="__codelineno-2-9"></a>    "PRIX": "Une consultation coûte {{prix}}.",
-<a id="__codelineno-2-10" name="__codelineno-2-10"></a>    "RENDEZ_VOUS": {
-<a id="__codelineno-2-11" name="__codelineno-2-11"></a>      "zero": "aucun rendez-vous",
-<a id="__codelineno-2-12" name="__codelineno-2-12"></a>      "one": "un rendez-vous",
-<a id="__codelineno-2-13" name="__codelineno-2-13"></a>      "other": "{{n}} rendez-vous"
-<a id="__codelineno-2-14" name="__codelineno-2-14"></a>    },
-<a id="__codelineno-2-15" name="__codelineno-2-15"></a>    "AJOUTER": "Ajouter un rendez-vous",
-<a id="__codelineno-2-16" name="__codelineno-2-16"></a>    "RETIRER": "En retirer un"
-<a id="__codelineno-2-17" name="__codelineno-2-17"></a>  },
-<a id="__codelineno-2-18" name="__codelineno-2-18"></a>  "ERRORS": {
-<a id="__codelineno-2-19" name="__codelineno-2-19"></a>    "LOGIN_TAKEN": "Ce login est déjà utilisé par un autre compte.",
-<a id="__codelineno-2-20" name="__codelineno-2-20"></a>    "TOO_MANY_ATTEMPTS": "Trop de tentatives infructueuses. Réessayez dans {{minutes}} minute(s)."
-<a id="__codelineno-2-21" name="__codelineno-2-21"></a>  },
-<a id="__codelineno-2-22" name="__codelineno-2-22"></a>  "SERVEUR": {
-<a id="__codelineno-2-23" name="__codelineno-2-23"></a>    "TITRE": "Traduire une réponse du serveur",
-<a id="__codelineno-2-24" name="__codelineno-2-24"></a>    "EXPLICATION": "Le serveur RdvMedecins ne renvoie que des clés. C'est le client qui les traduit :"
-<a id="__codelineno-2-25" name="__codelineno-2-25"></a>  }
-<a id="__codelineno-2-26" name="__codelineno-2-26"></a>}
+<span class="normal"><a href="#__codelineno-2-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="p">{</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">  </span><span class="nt">"APP"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="w">    </span><span class="nt">"TITRE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Exemple 21 - une application en deux langues"</span><span class="p">,</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="w">    </span><span class="nt">"LANGUE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Langue"</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="w">  </span><span class="nt">"ACCUEIL"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">    </span><span class="nt">"BONJOUR"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bonjour {{nom}} !"</span><span class="p">,</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="w">    </span><span class="nt">"AUJOURDHUI"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nous sommes le {{date}}."</span><span class="p">,</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><span class="w">    </span><span class="nt">"PRIX"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Une consultation coûte {{prix}}."</span><span class="p">,</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><span class="w">    </span><span class="nt">"RENDEZ_VOUS"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><span class="w">      </span><span class="nt">"zero"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aucun rendez-vous"</span><span class="p">,</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><span class="w">      </span><span class="nt">"one"</span><span class="p">:</span><span class="w"> </span><span class="s2">"un rendez-vous"</span><span class="p">,</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="w">      </span><span class="nt">"other"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{n}} rendez-vous"</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="w">    </span><span class="nt">"AJOUTER"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ajouter un rendez-vous"</span><span class="p">,</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a><span class="w">    </span><span class="nt">"RETIRER"</span><span class="p">:</span><span class="w"> </span><span class="s2">"En retirer un"</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a><span class="w">  </span><span class="nt">"ERRORS"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a><span class="w">    </span><span class="nt">"LOGIN_TAKEN"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ce login est déjà utilisé par un autre compte."</span><span class="p">,</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a><span class="w">    </span><span class="nt">"TOO_MANY_ATTEMPTS"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Trop de tentatives infructueuses. Réessayez dans {{minutes}} minute(s)."</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a><span class="w">  </span><span class="nt">"SERVEUR"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a><span class="w">    </span><span class="nt">"TITRE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Traduire une réponse du serveur"</span><span class="p">,</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24"></a><span class="w">    </span><span class="nt">"EXPLICATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Le serveur RdvMedecins ne renvoie que des clés. C'est le client qui les traduit :"</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
@@ -875,32 +875,32 @@
 <span class="normal"><a href="#__codelineno-3-23">23</a></span>
 <span class="normal"><a href="#__codelineno-3-24">24</a></span>
 <span class="normal"><a href="#__codelineno-3-25">25</a></span>
-<span class="normal"><a href="#__codelineno-3-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>{
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a>  "APP": {
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a>    "TITRE": "Example 21 - a two-language application",
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a>    "LANGUE": "Language"
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a>  },
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a>  "ACCUEIL": {
-<a id="__codelineno-3-7" name="__codelineno-3-7"></a>    "BONJOUR": "Hello {{nom}}!",
-<a id="__codelineno-3-8" name="__codelineno-3-8"></a>    "AUJOURDHUI": "Today is {{date}}.",
-<a id="__codelineno-3-9" name="__codelineno-3-9"></a>    "PRIX": "A consultation costs {{prix}}.",
-<a id="__codelineno-3-10" name="__codelineno-3-10"></a>    "RENDEZ_VOUS": {
-<a id="__codelineno-3-11" name="__codelineno-3-11"></a>      "zero": "no appointment",
-<a id="__codelineno-3-12" name="__codelineno-3-12"></a>      "one": "one appointment",
-<a id="__codelineno-3-13" name="__codelineno-3-13"></a>      "other": "{{n}} appointments"
-<a id="__codelineno-3-14" name="__codelineno-3-14"></a>    },
-<a id="__codelineno-3-15" name="__codelineno-3-15"></a>    "AJOUTER": "Add an appointment",
-<a id="__codelineno-3-16" name="__codelineno-3-16"></a>    "RETIRER": "Remove one"
-<a id="__codelineno-3-17" name="__codelineno-3-17"></a>  },
-<a id="__codelineno-3-18" name="__codelineno-3-18"></a>  "ERRORS": {
-<a id="__codelineno-3-19" name="__codelineno-3-19"></a>    "LOGIN_TAKEN": "This login is already used by another account.",
-<a id="__codelineno-3-20" name="__codelineno-3-20"></a>    "TOO_MANY_ATTEMPTS": "Too many failed attempts. Try again in {{minutes}} minute(s)."
-<a id="__codelineno-3-21" name="__codelineno-3-21"></a>  },
-<a id="__codelineno-3-22" name="__codelineno-3-22"></a>  "SERVEUR": {
-<a id="__codelineno-3-23" name="__codelineno-3-23"></a>    "TITRE": "Translating a server response",
-<a id="__codelineno-3-24" name="__codelineno-3-24"></a>    "EXPLICATION": "The RdvMedecins server only sends keys. The client translates them:"
-<a id="__codelineno-3-25" name="__codelineno-3-25"></a>  }
-<a id="__codelineno-3-26" name="__codelineno-3-26"></a>}
+<span class="normal"><a href="#__codelineno-3-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">  </span><span class="nt">"APP"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="nt">"TITRE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example 21 - a two-language application"</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="w">    </span><span class="nt">"LANGUE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Language"</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="w">  </span><span class="nt">"ACCUEIL"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><span class="w">    </span><span class="nt">"BONJOUR"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Hello {{nom}}!"</span><span class="p">,</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><span class="w">    </span><span class="nt">"AUJOURDHUI"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Today is {{date}}."</span><span class="p">,</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><span class="w">    </span><span class="nt">"PRIX"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A consultation costs {{prix}}."</span><span class="p">,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><span class="w">    </span><span class="nt">"RENDEZ_VOUS"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><span class="w">      </span><span class="nt">"zero"</span><span class="p">:</span><span class="w"> </span><span class="s2">"no appointment"</span><span class="p">,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><span class="w">      </span><span class="nt">"one"</span><span class="p">:</span><span class="w"> </span><span class="s2">"one appointment"</span><span class="p">,</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a><span class="w">      </span><span class="nt">"other"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{{n}} appointments"</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><span class="w">    </span><span class="nt">"AJOUTER"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Add an appointment"</span><span class="p">,</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a><span class="w">    </span><span class="nt">"RETIRER"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Remove one"</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a><span class="w">  </span><span class="nt">"ERRORS"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a><span class="w">    </span><span class="nt">"LOGIN_TAKEN"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This login is already used by another account."</span><span class="p">,</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a><span class="w">    </span><span class="nt">"TOO_MANY_ATTEMPTS"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Too many failed attempts. Try again in {{minutes}} minute(s)."</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21"></a><span class="w">  </span><span class="p">},</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22"></a><span class="w">  </span><span class="nt">"SERVEUR"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23"></a><span class="w">    </span><span class="nt">"TITRE"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Translating a server response"</span><span class="p">,</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24"></a><span class="w">    </span><span class="nt">"EXPLICATION"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The RdvMedecins server only sends keys. The client translates them:"</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>chaque texte a une <strong>clé</strong>, formée des noms des niveaux successifs : <strong><em>[ACCUEIL.BONJOUR]</em></strong>, <strong><em>[ERRORS.LOGIN_TAKEN]</em></strong>... Le code et les templates ne contiennent plus aucun texte, seulement des clés ;</li>
@@ -1046,23 +1046,23 @@
 <span class="normal"><a href="#__codelineno-5-14">14</a></span>
 <span class="normal"><a href="#__codelineno-5-15">15</a></span>
 <span class="normal"><a href="#__codelineno-5-16">16</a></span>
-<span class="normal"><a href="#__codelineno-5-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="o">//</span> <span class="o">=========================================================================</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="o">//</span> <span class="mi">21</span><span class="o">-</span><span class="n">i18n</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">ts</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="o">//</span> <span class="o">-------------------------------------------------------------------------</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="o">//</span> <span class="n">provideI18n</span><span class="p">()</span> <span class="p">:</span> <span class="n">ngx</span><span class="o">-</span><span class="n">translate</span> <span class="p">(</span><span class="n">cf</span><span class="o">.</span> <span class="n">app</span><span class="o">/</span><span class="n">i18n</span><span class="o">/</span><span class="n">i18n</span><span class="o">.</span><span class="n">ts</span><span class="p">)</span><span class="o">.</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="o">//</span> <span class="n">registerLocaleData</span><span class="p">(</span><span class="n">localeFr</span><span class="p">)</span> <span class="p">:</span> <span class="n">les</span> <span class="n">règles</span> <span class="n">françaises</span> <span class="n">des</span> <span class="n">pipes</span> <span class="n">date</span><span class="p">,</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="o">//</span> <span class="n">currency</span><span class="o">...</span> <span class="p">(</span><span class="n">l</span><span class="s1">'anglais est toujours disponible).</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="o">//</span> <span class="o">=========================================================================</span>
+<span class="normal"><a href="#__codelineno-5-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="c1">// =========================================================================</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="c1">// 21-i18n/src/main.ts</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="c1">// -------------------------------------------------------------------------</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="c1">// provideI18n() : ngx-translate (cf. app/i18n/i18n.ts).</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="c1">// registerLocaleData(localeFr) : les règles françaises des pipes date,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="c1">// currency... (l'anglais est toujours disponible).</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="c1">// =========================================================================</span>
 <a id="__codelineno-5-8" name="__codelineno-5-8"></a>
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">registerLocaleData</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/common'</span><span class="p">;</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="kn">import</span><span class="w"> </span><span class="nn">localeFr</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/common/locales/fr'</span><span class="p">;</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">bootstrapApplication</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'@angular/platform-browser'</span><span class="p">;</span>
-<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">App</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'./app/app'</span><span class="p">;</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="kn">import</span><span class="w"> </span><span class="p">{</span> <span class="n">provideI18n</span> <span class="p">}</span> <span class="kn">from</span><span class="w"> </span><span class="s1">'./app/i18n/i18n'</span><span class="p">;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">registerLocaleData</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/common'</span><span class="p">;</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="k">import</span><span class="w"> </span><span class="nx">localeFr</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/common/locales/fr'</span><span class="p">;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bootstrapApplication</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'@angular/platform-browser'</span><span class="p">;</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">App</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./app/app'</span><span class="p">;</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">provideI18n</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'./app/i18n/i18n'</span><span class="p">;</span>
 <a id="__codelineno-5-14" name="__codelineno-5-14"></a>
-<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="n">registerLocaleData</span><span class="p">(</span><span class="n">localeFr</span><span class="p">);</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="nx">registerLocaleData</span><span class="p">(</span><span class="nx">localeFr</span><span class="p">);</span>
 <a id="__codelineno-5-16" name="__codelineno-5-16"></a>
-<a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="n">bootstrapApplication</span><span class="p">(</span><span class="n">App</span><span class="p">,</span> <span class="p">{</span> <span class="n">providers</span><span class="p">:</span> <span class="p">[</span><span class="n">provideI18n</span><span class="p">()]</span> <span class="p">})</span><span class="o">.</span><span class="n">catch</span><span class="p">((</span><span class="n">erreur</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">erreur</span><span class="p">));</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17"></a><span class="nx">bootstrapApplication</span><span class="p">(</span><span class="nx">App</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">providers</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">provideI18n</span><span class="p">()]</span><span class="w"> </span><span class="p">}).</span><span class="k">catch</span><span class="p">((</span><span class="nx">erreur</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">erreur</span><span class="p">));</span>
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>ligne 15 : les pipes <strong><em>[date]</em></strong> et <strong><em>[currency]</em></strong> (exemple 09) connaissent les règles de l&#x27;anglais ; celles du français doivent être enregistrées ;</li>
